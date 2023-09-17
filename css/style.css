@@ -372,3 +372,113 @@ header .open-mobile {
         font-weight: 600;
     }
 }
+
+.all-cards .background-controller {
+    padding: 30px 0;
+}
+
+.all-cards .background-controller .cards-title {
+    text-align: center;
+    color: #383C52;
+    font-family: "Mark Pro";
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 992px) {
+    .all-cards .background-controller .card-item {
+        margin-bottom: 50px;
+    }
+}
+
+.all-cards .background-controller .card-item .all-items {
+    background-color: #F7F8F9;
+    border-radius: 12px;
+}
+
+.all-cards .background-controller .card-item:nth-child(1) .card-item-title {
+    background-color: #f4bfbc;
+}
+
+.all-cards .background-controller .card-item:nth-child(2) .card-item-title {
+    background-color: #c6e8e9;
+}
+
+.all-cards .background-controller .card-item:nth-child(3) .card-item-title {
+    background-color: #bee9f7;
+}
+
+.all-cards .background-controller .row:nth-child(3) {
+    margin-top: 60px;
+}
+
+.all-cards .background-controller .row:nth-child(3) .card-item:nth-child(1) .card-item-title {
+    background-color: #f9e8c4;
+}
+
+.all-cards .background-controller .row:nth-child(3) .card-item:nth-child(2) .card-item-title {
+    background-color: #94cbcc;
+}
+
+.all-cards .background-controller .row:nth-child(3) .card-item:nth-child(3) .card-item-title {
+    background-color: #98d1c7;
+}
+
+.all-cards .background-controller .card-item-title {
+    padding: 20px;
+    height: 77px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.all-cards .background-controller .card-item .card-img {
+    position: absolute;
+    right: 30px;
+    top: -30px;
+    width: 75px;
+}
+
+.all-cards .background-controller .card-item .card-img img {
+    max-width: 100%;
+}
+
+.all-cards .background-controller .card-item .content-area {
+    padding: 40px 10px;
+}
+
+.all-cards .background-controller .card-item .content-area ul li {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.all-cards .background-controller .card-item .content-area ul li .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff756a;
+}
+
+.all-cards .background-controller .card-item:nth-child(2) .content-area ul li .circle {
+    background-color: #56c4c4;
+}
+
+.all-cards .background-controller .card-item:nth-child(3) .content-area ul li .circle {
+    background-color: #3ac7f3;
+}
+
+.all-cards .background-controller .row:nth-child(3) .card-item:nth-child(1) .content-area ul li .circle {
+    background-color: #fec248;
+}
+
+.all-cards .background-controller .row:nth-child(3) .card-item:nth-child(2) .content-area ul li .circle {
+    background-color: #d2dadf;
+}
+
+.all-cards .background-controller .row:nth-child(3) .card-item:nth-child(3) .content-area ul li .circle {
+    background-color: #0b967e;
+}
