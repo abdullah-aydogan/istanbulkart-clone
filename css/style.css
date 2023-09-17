@@ -1,0 +1,147 @@
+a {
+    text-decoration: none;
+    color: #333;
+    font-family: "Mark Pro";
+}
+
+header {
+    padding: 20px 0;
+}
+
+header .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+header .header-top .member-area {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+header .header-top .search-box {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    margin: 0 20px;
+    transition: .2s linear;
+}
+
+header .header-top .search-box.active {
+    justify-content: center;
+}
+
+@media only screen and (max-width: 992px) {
+    header .header-top .search-box {
+        display: none;
+    }
+}
+
+header .header-top .search-box .search-input {
+    position: relative;
+    opacity: 0;
+    pointer-events: none;
+    transition: .2s linear;
+}
+
+header .header-top .search-box.active .search-input {
+    opacity: 1;
+    pointer-events: all;
+    border: 2px solid #ebebed;
+    padding: 12px 27px;
+    margin: -12px 0;
+    border-radius: 12px;
+}
+
+header .header-top .search-box .search-input input {
+    border: none;
+}
+
+header .header-top .search-box .search-input div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    cursor: pointer;
+}
+
+header .header-top .search-box .search-input i {
+    color: rgb(195, 196, 203);
+}
+
+header .header-top .search-box .open-search {
+    transition: .2s linear;
+    cursor: pointer;
+    padding: 3px 5px;
+}
+
+header .header-top .search-box .open-search i {
+    color: rgb(195, 196, 203);
+}
+
+header .header-top .search-box.active .open-search {
+    opacity: 0;
+    pointer-events: none;
+}
+
+header .header-top .online .goto-online{ 
+    font-size: 16px;
+    font-weight: 700;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ebebed;
+    font-family: "Mark Pro";
+    color: #383c52;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 992px) {
+    header .header-top .online .goto-online {
+        display: none;
+    }
+}
+
+header .header-top .language h2 {
+    font-family: "Mark Pro";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.0;
+    color: #383c52;
+    cursor: pointer;
+    margin: 0;
+}
+
+header .header-bottom {
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    header .header-bottom {
+        display: none;
+    }
+}
+
+header .header-bottom .position-controller .all-items {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+header .header-bottom .position-controller .nav-link a {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+header .open-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    header .open-mobile{
+        display: block;
+        font-size: 25px;
+    }
+}
