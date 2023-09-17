@@ -24,7 +24,68 @@ $(document).ready(function() {
     });
 
     $(mobileMenuClose).click(function() {
-        
+
         $(mobileMenu).removeClass('active');
     });
+
+    $('.hero-section .slider-area').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        responsive: {
+            0: {
+                items:1
+            },
+            600: {
+                items:1
+            },
+            1000: {
+                items:1
+            }
+        }
+    });
+
+    function postsCarousel() {
+
+        var checkWidth = $(window).width();
+        var owlPost = $('.announcement .slider-section');
+
+        if (checkWidth < 992) {
+
+          if (typeof owlPost.data('owl.carousel') != 'undefined') {
+
+            owlPost.data('owl.carousel').destroy();
+          }
+
+          owlPost.removeClass('owl-carousel');
+        } 
+        
+        else if (checkWidth > 991) {
+
+            $(owlPost).addClass('owl-carousel');
+
+            $(owlPost).owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items:1
+                    },
+                    600: {
+                        items:1
+                    },
+                    1000: {
+                        items:1
+                    }
+                }
+            });
+
+            $(".announcement .slider-section .owl-prev").html('<i class="fa fa-chevron-left"></i>');
+            $(".announcement .slider-section .owl-next").html('<i class="fa fa-chevron-right"></i>');
+        }
+      }
+      
+      postsCarousel();
+      $(window).resize(postsCarousel);
 });
