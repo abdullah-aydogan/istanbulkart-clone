@@ -317,6 +317,48 @@ header .open-mobile {
     border-radius: 12px;
 }
 
+.campaigns {
+    margin: 20px 0;
+}
+
+.campaigns .area-title h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.campaigns .slider-area .item img {
+    border-radius: 14px;
+}
+
+.campaigns .owl-dots {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.campaigns .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    background-color:#bec8cc;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+
+.campaigns .owl-dots .owl-dot.active {
+    background-color: #007aff;
+}
+
+.campaigns .see-all-campaings {
+    color: #383C52;
+    font-weight: bold;
+    margin-left:calc(50% - 115px);
+    font-size: 16px;
+    border: 2px solid #EBEEF0;
+    padding: 12px 27px;
+    border-radius: 12px;
+}
+
 .mobile-menu {
     display: none;
 }
