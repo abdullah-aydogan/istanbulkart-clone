@@ -359,8 +359,114 @@ header .open-mobile {
     border-radius: 12px;
 }
 
+footer .footer-line {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+footer .container .footer-right {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    align-items: start;
+}
+
+footer .container .logo-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+footer .container .logo-area .tcmb-belbim {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .container .logo-area .tcmb-img, .belbim-img {
+    width: 100%;
+}
+
+footer .container .copyright p {
+    color: #606375;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: "Mark Pro";
+}
+
+footer .container .footer-links li {
+    line-height: 18px;
+    padding-bottom: 10px;
+    padding-top: 12px;
+    font-family: "Mark Pro";
+    font-size: 14px;
+    font-weight: 700;
+}
+
+footer .container .footer-links .telefon {
+    color: #1581be;
+    margin-top: 10px;
+    font-family: "Mark Pro";
+    font-weight: 700;
+    font-size: 16px;
+}
+
+footer .container .icons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .container .icons p {
+    line-height: 18px;
+    padding-top: 12px;
+    color: #333;
+    font-family: "Mark Pro";
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+footer .container .icons .icon {
+    text-align: center;
+}
+
+footer .container .icons .icon-img {
+    width: 50%;
+}
+
 .mobile-menu {
     display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    footer .container .logo-area .tcmb-belbim {
+        width: 70%;
+    }
+
+    footer .container .icons .icon-img {
+        width: 80%;
+    }
+
+    footer .container .footer-right {
+        display: block
+    }
+
+    footer .copyright {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 992px) {
