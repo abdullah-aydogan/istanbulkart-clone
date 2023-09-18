@@ -3,6 +3,10 @@ $(document).ready(function() {
     let openBTN = $('header .header-top .search-box .open-search');
     let closeBTN = $('header .header-top .search-box .search-input div');
     let searchBox = $('header .header-top .search-box');
+    let button_guncel = $('main .buttons-area .button_guncel');
+    let button_gecmis = $('main .buttons-area .button_gecmis');
+    let campaigns_guncel = $('main .guncel');
+    let campaigns_gecmis = $('main .gecmis');
 
     $(openBTN).click(function() {
 
@@ -12,6 +16,26 @@ $(document).ready(function() {
     $(closeBTN).click(function() {
 
         $(searchBox).removeClass('active');
+    });
+
+    $(campaigns_guncel).show();
+
+    $(button_guncel).click(function() {
+
+        $(campaigns_guncel).show();
+        $(campaigns_gecmis).hide();
+
+        $(button_guncel).css({"background-color" : "#383c52", "color" : "white"});
+        $(button_gecmis).css({"background-color" : "white", "color" : "#acb6bd"});
+    });
+
+    $(button_gecmis).click(function() {
+
+        $(campaigns_gecmis).show();
+        $(campaigns_guncel).hide();
+
+        $(button_gecmis).css({"background-color" : "#383c52", "color" : "white"});
+        $(button_guncel).css({"background-color" : "white", "color" : "#acb6bd"});
     });
 
     let mobileMenuOpen = $('header .open-mobile');

@@ -58,6 +58,7 @@ header .header-top .search-box.active .search-input {
 
 header .header-top .search-box .search-input input {
     border: none;
+    outline: none;
 }
 
 header .header-top .search-box .search-input div {
@@ -251,7 +252,7 @@ header .open-mobile {
         overflow-x: scroll;
         gap: 20px;
         margin-bottom: 30px;
-        scroll-snap-type:center;
+        scroll-snap-type: center;
     }
 }
 
@@ -303,14 +304,21 @@ header .open-mobile {
 .announcement .owl-nav button.owl-next {
     right: -42px;
 }
+
 .announcement .owl-nav button.owl-prev {
     left: -42px;
 }
 
 .announcement .see-all-announcement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.announcement .see-all-announcement a {
     color: #383C52;
     font-weight: bold;
-    margin-left:calc(50% - 115px);
     font-size: 16px;
     border: 2px solid #EBEEF0;
     padding: 12px 27px;
@@ -629,4 +637,51 @@ footer .container .icons .icon-img {
 
 .all-cards .background-controller .row:nth-child(3) .card-item:nth-child(3) .content-area ul li .circle {
     background-color: #0b967e;
+}
+
+main .container .buttons-area {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+main .container .buttons-area button {
+    padding: 16px 10px;
+    background-color: #383c52;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-family: "Mark Pro";
+}
+
+main .container .buttons-area button:nth-child(2) {
+    background-color: white;
+    color: #acb6bd;
+}
+
+main .container .slider-area img {
+    border-radius: 10px;
+}
+
+main .container .guncel {
+    display: none;
+    transition: .1s ease-in-out;
+}
+
+main .container .gecmis {
+    display: none;
+    transition: .1s ease-in-out;
+}
+
+main .container .gecmis img {
+    opacity: 0.5;
+    transition: .2s linear;
+}
+
+main .container .gecmis img:hover {
+    opacity: 1;
 }
