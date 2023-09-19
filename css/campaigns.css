@@ -1,0 +1,48 @@
+@import url(./style.css);
+
+main .container .buttons-area {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+main .container .buttons-area button {
+    padding: 16px 10px;
+    background-color: #383c52;
+    border-radius: 10px;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-family: "Mark Pro";
+}
+
+main .container .buttons-area button:nth-child(2) {
+    background-color: white;
+    color: #acb6bd;
+}
+
+main .container .slider-area img {
+    border-radius: 10px;
+}
+
+main .container .guncel {
+    display: none;
+    transition: .1s ease-in-out;
+}
+
+main .container .gecmis {
+    display: none;
+    transition: .1s ease-in-out;
+}
+
+main .container .gecmis img {
+    opacity: 0.5;
+    transition: .2s linear;
+}
+
+main .container .gecmis img:hover {
+    opacity: 1;
+}
